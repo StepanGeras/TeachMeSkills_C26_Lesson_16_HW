@@ -49,7 +49,7 @@ public class Runner {
 
         System.out.println("Output via Map.Entry");
 
-        for (Map.Entry client : mapClient.entrySet()){
+        for (Map.Entry<String, Client> client : mapClient.entrySet()){
             System.out.println("Key " + client.getKey() + " " + client.getValue().toString());
         }
 
@@ -63,13 +63,13 @@ public class Runner {
 
         System.out.println("Output of all keys");
 
-        for (Map.Entry client : mapClient.entrySet()){
+        for (Map.Entry<String, Client> client : mapClient.entrySet()){
             System.out.println("Key " + client.getKey());
         }
 
         System.out.println("Output all values");
 
-        for (Map.Entry client : mapClient.entrySet()){
+        for (Map.Entry<String, Client> client : mapClient.entrySet()){
             System.out.println("Value " + client.getValue());
         }
 
